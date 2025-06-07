@@ -1,0 +1,100 @@
+/* src/App.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --primary-orange: #FF6B4A; /* Matches the "Start Cooking" button */
+  --secondary-yellow: #FBD786; /* Background yellow */
+  --light-gray: #F0F2F5; /* A subtle background gray */
+  --dark-text: #333;
+  --light-text: #666;
+  --white: #fff;
+  --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --border-radius-lg: 15px;
+  --border-radius-md: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* A modern, clean font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, var(--secondary-yellow) 0%, #fae6b2 100%); /* Yellow gradient background */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align content to the top */
+  padding: 30px 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  background-color: var(--white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--box-shadow);
+  padding: 40px;
+  width: 100%;
+  max-width: 900px; /* Max width for content area */
+  margin: 0 auto;
+}
+/* Responsive Navigation */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav links in mobile, or use a hamburger menu */
+  }
+
+  .logo {
+    font-size: 1.5em;
+  }
+}
+
+/* Hero Section Layout */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+  }
+
+  .hero-title {
+    font-size: 2em;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-image-placeholder {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
+/* Ingredient input and buttons on small screens */
+@media (max-width: 600px) {
+  .input-section {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+
+  .ingredient-input {
+    width: 100% !important;
+  }
+
+  .add-button {
+    width: 100%;
+  }
+
+  .current-ingredients {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
