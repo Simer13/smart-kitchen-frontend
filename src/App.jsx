@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { useState } from 'react';
-//import { motion } from 'framer-motion'; // Assuming framer-motion is used for animations
+import { motion } from 'framer-motion'; // Assuming framer-motion is used for animations
 import RecipeSuggestion from './components/RecipeSuggestion';
 import Filters from './components/Filters';
 import './App.css'; // Global styles for the app

@@ -1,6 +1,6 @@
 // src/components/Filters.jsx
 import React from "react";
-//import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import "./Filters.css"; // Optional: Your custom CSS for better visuals
 
 const Filters = ({ filters, setFilters }) => {
